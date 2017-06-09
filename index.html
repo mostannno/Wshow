@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Title</title>
+    <script src="script/constructorShare.js" type="text/javascript"></script>
+    <script src="script/zepto.min.js" type="text/javascript"></script>
+    <script src="script/jiaohu-1.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="style/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="allBox">
+    <div class="indexBox">
+        <div class="mainBox ihomePage">
+            <div class="page-header">
+                <h3 style="font-family: Papyrus">Welcome To WShow
+                    <small></small>
+                </h3>
+            </div>
+            <div class="content">
+                <div class="cards">
+                    <span class="label label-default card animated">国际特卖</span>
+                    <span class="label label-danger card animated">家具家电</span>
+                    <span class="label label-primary card animated">金融</span>
+                    <span class="label label-success card animated">生活</span>
+                    <span class="label label-default" id="addcard">...</span>
+                    <div id="hideWords">点击“...”为自己选择个性化标签吧！</div>
+                    <div class="hidecards animated">
+                        <span class="label label-info card animated">鞋包</span>
+                        <span class="label label-warning card animated">男士</span>
+                        <span class="label label-info card animated">女装</span>
+                        <span class="label label-warning card animated">母婴</span>
+                        <span class="label label-danger card animated">运动</span>
+                        <span class="label label-success card animated">爱丽奢</span>
+                        <span class="label label-default card animated">美妆</span>
+                        <span class="label label-primary card animated">配饰</span>
+                    </div>
+                    <div id="jingxuan">精选分享</div>
+                </div>
+                <div class="showBox">
+                    <div class="showDiv" data-shareid="12">
+                        <div class="writerDiv"><img class="writerImg" src="images/class1.jpg">
+                            <div class="timeDiv"><a href="#" class="writerName">abb</a><br><span class="updateTime">5-20</span></div><button type="button" class="btn btn-default addConcernBtn">加关注</button>
+                        </div>
+                        <div class="decDiv"><span class="showWords">i like this</span>
+                            <div class="decImgs"><img class="showImg" src="images/class3.jpg" alt="loading"></div>
+                        </div>
+                        <div class="labelDiv">
+                            <span class="label label-danger card">金融</span>
+                            <span class="label label-primary card">生活</span>
+                        </div>
+                        <a href="" class="check">查看商品详情</a>
+                        <div class="numBox">
+                            <div class="numBoxIn"><img class="numImg" src="images/browse.svg"><span
+                                    class="browseNum number">534</span></div>
+                            <div class="numBoxIn"><img class="numImg" src="images/comments.svg"><span
+                                    class="conmmentNum number">34</span></div>
+                            <div class="numBoxIn"><img class="numImg GoodImg" src="images/good.svg"><span
+                                    class="goodNum number">123</span></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="mainBox imyConcern">
+            <div class="page-header">
+                <h2 style="font-family: Papyrus;font-size:20px;">My Concern</h2>
+            </div>
+            <div class="containerBox">
+                <div class="showBox">
+
+                </div>
+            </div>
+        </div>
+        <div class="mainBox ipersonal">
+            <div class="page-header">
+                <h3 style="font-family: Papyrus">Personality recommendation
+                    <small style="font-family: Papyrus">Made For You</small>
+                </h3>
+            </div>
+            <div class="innerWords">根据您的访问记录，我们推荐以下分享</div>
+            <div class="containerBox">
+                <div class="showBox">
+                </div>
+            </div>
+        </div>
+        <div class="mainBox iaccount">
+            <div class="iaBox">
+                <div id="photoBox">
+                    <img src="images/class6.jpg" id="photoImg" alt="#">
+                    <span id="myName">Kurt</span>
+                    <span id="myWord">Light in the Night</span>
+                </div>
+                <div class="mine2">
+                    <div class="lineBox makeShare">发布作品</div>
+                    <div class="production lineBox toWriterShare">我的作品<span class="proNum">(12)</span></div>
+                    <div class="toSocial lineBox">社交</div>
+                </div>
+                <div class="mine2">
+                    <div class="scan lineBox toWriterShare">最近浏览</div>
+                    <div class="favorate lineBox toWriterShare">最近点赞</div>
+                    <div class="logout lineBox">注销</div>
+                </div>
+                <div class="mine1">
+                    <div class="lineBox" id="changeMessageBtn">个人信息更改</div>
+                    <div class="lineBox">关于</div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div id="foot_float_div"></div>
+            <div class="homePage footBox choose"><img class="img" src="images/homePage.svg"><a href="#" class="words">首页</a>
+            </div>
+            <div class="myConcern footBox"><img class="img" src="images/myConcern.svg"><a href="#" class="words">我的关注</a>
+            </div>
+            <div class="personal footBox"><img class="img" src="images/personal.svg"><a href="#" class="words">个性推荐</a>
+            </div>
+            <div class="account footBox"><img class="img" src="images/account.svg"><a href="#" class="words">我的账户</a>
+            </div>
+        </div>
+    </div>
+    <div class="socialBox">
+        <div class="social_top">
+            <div class="social_head">
+                <div class="backToIndex">
+                    <img src="images/arrow-left.svg"><span>我</span>
+                </div>
+                <span style="font-family: 微软雅黑;font-size: 19px;">我的好友</span>
+                <div style="width: 60px;"></div>
+            </div>
+            <div class="search_div">
+                <input class="search_input" type="text" placeholder="搜索新联系人">
+            </div>
+            <div class="changePeople">
+                <span class="changeSpan concernBtn">关注人</span>|
+                <span class="changeSpan fansBtn">粉丝</span>
+                <div id="floatDiv"></div>
+            </div>
+        </div>
+        <div class="peopleMessageBox">
+            <div class="concernPeopleMessageBox"></div>
+            <div class="fansPeopleMessageBox"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

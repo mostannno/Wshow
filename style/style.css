@@ -1,0 +1,513 @@
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul, img{
+    margin:0;
+    padding:0;
+}
+html, body, .allBox, .indexBox, .socialBox{
+    height:100%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.socialBox{display: none}
+
+.ihomePage,.ipersonal,.imyConcern{
+    height:100%;
+}
+
+.page-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerBox{
+    height: 73%;
+    overflow-y: scroll;
+}
+
+.cards{
+    background:#fff;
+    padding-left:4px;
+    padding-bottom:3px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hidecards{
+    width:100%;
+    display: none;
+    margin-top:10px;
+    margin-left:5%;
+    padding-bottom:5px;
+}
+
+#hideWords{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    padding-bottom:5px;
+}
+
+#jingxuan{
+    box-sizing: border-box;
+    height:40px;
+    display: block;
+    background: #fff;
+    margin-top:5px;
+    padding-left:15px;
+    padding-top:15px;
+    background: linear-gradient(to bottom,#F5F5F5,#DCDCDC,#F5F5F5) no-repeat bottom/92% 1px;
+}
+
+.innerWords{
+    width:100%;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.card{
+    font-weight: 400;
+    display: inline-block;
+    margin-left:10px;
+    height:25px;
+    width:60px;
+    text-align: center;
+    font-size: 12px;
+    line-height:20px;
+    margin-bottom:5px;
+}
+
+#addcard{
+    font-weight: 100;
+    display: inline-block;
+    margin-left:10px;
+    height:25px;
+    width:60px;
+    text-align: center;
+    font-size: 12px;
+    line-height:20px;
+    margin-bottom:5px;
+}
+
+
+.iaccount{
+    height:100%;
+}
+
+.iaBox{
+    height:100%;
+    width:100%;
+    background: #F5F5F5;
+}
+
+#photoBox{
+    width:100%;
+    height:25%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photoImg{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+
+#myWord{
+    font-size:13px;
+    color:gray;
+    text-decoration: underline;
+}
+
+.mine1{
+    margin-top:10px;
+    background:#fff;
+    height:14%
+}
+
+.mine1 > .lineBox{
+    height:50%;
+}
+
+.mine2{
+    margin-top:10px;
+    background:#fff;
+    height:21%;
+}
+
+.mine2 > .lineBox{
+    height:33%;
+}
+
+.lineBox{
+    width:100%;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    border-bottom: 1px solid #D3D3D3;
+    position: relative;
+}
+
+.lineBox::before{
+    content:"";
+    position:absolute;
+    right:40px;
+    top:50%;
+    transform: translateY(-50%);
+    width:0;
+    height:0;
+    z-index:1;
+    border:6px solid #ffffff;
+    border-left:6px solid #228B22;
+}
+
+.lineBox::after{
+    content:"";
+    position:absolute;
+    right:42px;
+    top:50%;
+    transform: translateY(-50%);
+    width:0;
+    height:0;
+    z-index:2;
+    border:6px solid transparent;
+    border-left:6px solid #fff;
+
+}
+
+.mine1 div:last-child{
+    border-bottom:0;
+}
+
+.mine2 div:last-child{
+    border-bottom:0;
+}
+
+
+.content{
+    height:77%;
+    width:100%;
+    background: #F5F5F5;
+    padding-top:0px;
+    overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar{
+    width:0px;
+}
+
+.showDiv{
+    background:#ffffff;
+    width:100%;
+    position:relative;
+    margin-top:10px;
+}
+
+.check{
+    margin-left:12px;
+}
+
+.showBox div:nth-child(1){
+    margin-top:0px;
+}
+
+.showWords{
+    margin-bottom: 5px;
+}
+
+.numBox{
+    background: linear-gradient(to bottom,#F5F5F5,#DCDCDC,#F5F5F5) no-repeat top/98% 1px;
+    width:100%;
+    display: flex;
+    height:30px;
+    margin-top:10px;
+}
+
+.numBoxIn{
+    background: linear-gradient(to bottom,#F5F5F5,#696969,#F5F5F5) no-repeat right/1px 15px;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.numBoxIn:last-child{
+    background:0;
+}
+
+.numImg{
+    width:1em;
+    height:1em;
+}
+
+.number{
+    font-size:0.7em;
+    margin-left:3px;
+    margin-right:5px;
+}
+
+.decDiv{
+    padding-left:10px;
+    padding-right:10px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.decImgs{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.showImg{
+    width:150px;
+    height:150px;
+}
+
+.writerDiv{
+    width:100%;
+    height:30px;
+    margin-bottom:20px;
+    position:relative;
+    left:10px;
+    top:5px;
+}
+
+.addConcernBtn{
+    position:absolute;
+    top:5px;
+    right:50px;
+    height:30px;
+    width:60px;
+    font-size:12px;
+}
+
+.writerImg{
+    width:30px;
+    height:30px;
+    border-radius: 50%;
+    margin-right:9px;
+    vertical-align: middle;
+    float:left;
+}
+
+.writerName{
+    text-decoration: none;
+    font-size:13px;
+    position:relative;
+    top:-2px;
+}
+
+.foot{
+    display: flex;
+    background:#F8F8FF;
+    width:100%;
+    height:9%;
+    position:fixed;
+    bottom: 0;
+}
+
+.footBox{
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:0.7em;
+}
+
+#foot_float_div{
+    position:absolute;
+    top:0px;
+    height:0px;
+    background: transparent;
+    border-bottom:1px solid #000;
+    -webkit-transition: all 0.3s linear 0s;
+    -moz-transition: all 0.3s linear 0s;
+    -ms-transition: all 0.3s linear 0s;
+    -o-transition: all 0.3s linear 0s;
+}
+
+.choose{
+    background:#DCDCDC;
+    font-size:0.8em;
+}
+
+.choose > img{
+    width:2.5em;
+    height:2.5em;
+}
+
+
+.words{
+    text-decoration: none;
+    color:#000000;
+}
+
+.img{
+    width:2.1em;
+    height:2.1em;
+    margin-bottom: 0.1em;
+}
+
+.timeDiv{
+    float:left;
+}
+
+.updateTime{
+    font-size:5px;
+    position:relative;
+    top:-9px;
+    left:2px;
+}
+
+/*社交栏*/
+
+
+.social_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 微软雅黑;
+    border-bottom:1px solid #D3D3D3;
+    height:48px;
+}
+
+.backToIndex{
+    margin-left:5px;
+}
+.backToIndex img{
+    width:40px;
+    height:40px;
+}
+
+.backToIndex span{
+    margin-left:-4px;
+    font-size:19px;
+    vertical-align: middle;
+}
+
+.search_div{
+    width:100%;
+    height:30px;
+    background:#DCDCDC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.search_input{
+    width:95%;
+    height:22px;
+    border-radius:3px;
+    border:none;
+    text-indent:5px;
+    outline: none;
+}
+
+.changePeople{
+    width:100%;
+    height:40px;
+    border-bottom: 5px solid #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+#floatDiv{
+    position:absolute;
+    top:27px;
+    width:10px;
+    height:0px;
+    background: transparent;
+    border-bottom:1px solid #000;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+.changeSpan{
+     line-height:40px;
+ }
+
+
+.search_div span{
+    font-size:18px;
+    line-height:40px;
+}
+
+.peopleMessageBox{
+    height : 91%;
+}
+
+.concernPeopleMessageBox{
+    height:100%;
+}
+
+.fansPeopleMessageBox{
+    height:100%;
+}
+
+
+.peopleMessage{
+    height:100px;
+    border-bottom:1px solid #D3D3D3;
+    display: flex;
+    align-items: center;
+}
+
+.social_headPhoto{
+    height:60px;
+    width:60px;
+    border-radius:50%;
+    margin-left:10px;
+}
+
+.social_writer{
+    width:65%;
+    height:50%;
+    margin-left:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social_writerInfo{
+    font-size:12px;
+    color:darkgray;
+}
+
+.addConcern{
+    width:80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addConcern_img{
+    width:30px;
+    height:30px;
+}
+
+.addConcern_word{
+    font-size:12px;
+    font-weight: 100;
+}
+
+
